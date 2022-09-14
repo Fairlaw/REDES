@@ -1,0 +1,14 @@
+Broadcast: 255.255.255.0	Classe C
+Broadcast: 255.255.0.0		Classe B
+Broadcast: 255.0.0.0		Classe A
+
+IP: 0 até 126 	= Classe A
+IP: 128 até 191 = Classe B
+IP: 192 até 255 = Classe C
+
+O IP 127 é reservado loopback de rede, é o IP que já vem com a máquina = local host
+
+A Máscara de rede dita a classe da rede, independentemente do número do primeiro octeto.
+Exemplo: 192.168.40.3, seria classe C (máscara 255.255.255.0), mas podemos mudar a máscara
+para 255.255.0.0 e a rede passará a ser classe B.
+

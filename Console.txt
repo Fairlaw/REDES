@@ -1,0 +1,41 @@
+en (enable)
+conf t
+hostname (nome do switch)
+
+enable secret (colocar a senha na frente)
+
+line console 0 (acessar a porta 0 do console )
+password (colocar senha na frente)
+login (instrui o console a pedir a senha ao inserir o cabo no console)
+
+exit (para sair do local atual)
+
+line vty 0 4  (vty é porta virtual de acesso. permite acesso remoto em 5 portas (0, 1, 2, 3, 4)) max 16
+password (colocar senha na frente)
+login (instrui o console a pedir a senha ao inserir o cabo no console)
+
+end (sair de tudo)
+
+copy running-config startup-config (copia as configurações da memória
+ ram para a memória flash) esse é o comando pedido na prova. W e R funcionam também.
+
+--------------------------------------------------------------------------------------
+
+enable
+
+show running-config (abrir arquivo de configuração sanvo na memória flash)
+
+show ? (ajuda comando show)
+
+show mac-address-table (mostra os endereços MAC das maquinas em atividade)
+
+show ip interface brief
+
+conf t
+interface vlan1 (acessa as configurações do switch (conectado ao laptop pelo console)
+SW01(config-if)#ip address 192.168.20.200 255.255.255.0  (adiciona IP ao switch para que se possa acessálo remotamente)
+SW01(config-if)#no shutdown
+
+telnet 'ip do switch' = acessa remotamente o console do switch
+
+30155861

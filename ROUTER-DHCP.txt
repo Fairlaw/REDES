@@ -1,0 +1,5 @@
+conf t
+service dhcp
+ip dhcp pool (nome do pool)
+network (IP DA REDE E MASCARA)
+default-router (ip do router gatway)

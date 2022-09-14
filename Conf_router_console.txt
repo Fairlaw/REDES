@@ -1,0 +1,13 @@
+en ou enable(entrar no root)
+conf t (configure terminal)
+hostname R-BR (alterar nome do router
+line console 0 (configuração da porta console 0)
+password "cisco" (colocar password, nesse exemplo é cisco)
+enable secret ccna (coloca senha secreta para o comando "enable") no formato secret, a senha é criptografada
+banner motd # (adicionar mensagem ao acessar console)
+interface s0/0/0 (configuração da porta seria 0/0/0)
+ip address 192.xxx.xx.x 255.xxx.xxx.x (configura ip e mascara fixa do router)
+no shutdown (ligar a porta serial)
+description text text text (adiciona descrição ao roteador)
+end (equivalente a cd ..)
+wr (salvar configurações)

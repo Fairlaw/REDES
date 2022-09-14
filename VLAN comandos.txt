@@ -1,0 +1,11 @@
+conf t
+vlan 2
+name (NOME DA VLAN)
+exit
+interface range f0/x - f0/x (x numero da porta fast)
+switchport access vlan 2
+
+----------------------------------------------------
+
+show vlan brief
+
