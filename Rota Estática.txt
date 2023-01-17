@@ -1,0 +1,11 @@
+ROUTER RIP
+
+conf t
+
+router rip
+network 192.168.1.0  (rede interna)
+network 192.168.10.0 (conexão wan)
+
+end
+wr
+
