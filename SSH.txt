@@ -8,6 +8,8 @@ transport input ssh
 exit
 
 ip ssh version 2
+
+ip domain name dominio.com
 crypto key generate rsa
 "HOW MANY BITS IN THE MODULES [512]": 1024
 
